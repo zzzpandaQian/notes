@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>信号signals | 还隔这查文档，我上来就是一拳</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/notes/assets/css/0.styles.046e0507.css" as="style"><link rel="preload" href="/notes/assets/js/app.693f674f.js" as="script"><link rel="preload" href="/notes/assets/js/2.ee803d5e.js" as="script"><link rel="preload" href="/notes/assets/js/35.0b951c50.js" as="script"><link rel="prefetch" href="/notes/assets/js/10.8df4875c.js"><link rel="prefetch" href="/notes/assets/js/100.8bdd21e6.js"><link rel="prefetch" href="/notes/assets/js/101.6e8be7dd.js"><link rel="prefetch" href="/notes/assets/js/102.53ab07dc.js"><link rel="prefetch" href="/notes/assets/js/103.9a825864.js"><link rel="prefetch" href="/notes/assets/js/104.aa5af432.js"><link rel="prefetch" href="/notes/assets/js/105.ea9a56c7.js"><link rel="prefetch" href="/notes/assets/js/106.ec33f3ad.js"><link rel="prefetch" href="/notes/assets/js/107.e7009964.js"><link rel="prefetch" href="/notes/assets/js/108.52c1f920.js"><link rel="prefetch" href="/notes/assets/js/109.65d686e4.js"><link rel="prefetch" href="/notes/assets/js/11.1496d8e0.js"><link rel="prefetch" href="/notes/assets/js/110.dd503851.js"><link rel="prefetch" href="/notes/assets/js/111.713cd005.js"><link rel="prefetch" href="/notes/assets/js/112.b008e42d.js"><link rel="prefetch" href="/notes/assets/js/113.8765549b.js"><link rel="prefetch" href="/notes/assets/js/114.c1ab5490.js"><link rel="prefetch" href="/notes/assets/js/115.3d9d10df.js"><link rel="prefetch" href="/notes/assets/js/116.21bac402.js"><link rel="prefetch" href="/notes/assets/js/117.80ca349e.js"><link rel="prefetch" href="/notes/assets/js/118.264dfbfd.js"><link rel="prefetch" href="/notes/assets/js/119.94abe060.js"><link rel="prefetch" href="/notes/assets/js/12.48b964d8.js"><link rel="prefetch" href="/notes/assets/js/120.a1e95cca.js"><link rel="prefetch" href="/notes/assets/js/121.920f0871.js"><link rel="prefetch" href="/notes/assets/js/122.fa2c1331.js"><link rel="prefetch" href="/notes/assets/js/123.ae900d0b.js"><link rel="prefetch" href="/notes/assets/js/124.a681e4ad.js"><link rel="prefetch" href="/notes/assets/js/125.9dc36731.js"><link rel="prefetch" href="/notes/assets/js/126.19b0b6f6.js"><link rel="prefetch" href="/notes/assets/js/127.753e1762.js"><link rel="prefetch" href="/notes/assets/js/128.04d224d3.js"><link rel="prefetch" href="/notes/assets/js/129.96ed219e.js"><link rel="prefetch" href="/notes/assets/js/13.7a358a5b.js"><link rel="prefetch" href="/notes/assets/js/130.31efda50.js"><link rel="prefetch" href="/notes/assets/js/131.1fbd9731.js"><link rel="prefetch" href="/notes/assets/js/132.24cbfa83.js"><link rel="prefetch" href="/notes/assets/js/133.3d541007.js"><link rel="prefetch" href="/notes/assets/js/134.87101ac5.js"><link rel="prefetch" href="/notes/assets/js/135.25562a0d.js"><link rel="prefetch" href="/notes/assets/js/136.55d387c0.js"><link rel="prefetch" href="/notes/assets/js/137.b70e6a0a.js"><link rel="prefetch" href="/notes/assets/js/138.b4a0d289.js"><link rel="prefetch" href="/notes/assets/js/139.eb1b9d08.js"><link rel="prefetch" href="/notes/assets/js/14.fb3a52e3.js"><link rel="prefetch" href="/notes/assets/js/140.906e8f92.js"><link rel="prefetch" href="/notes/assets/js/141.a9c1d0ff.js"><link rel="prefetch" href="/notes/assets/js/142.10d4f3f3.js"><link rel="prefetch" href="/notes/assets/js/143.70d396fb.js"><link rel="prefetch" href="/notes/assets/js/144.cf7ba1e8.js"><link rel="prefetch" href="/notes/assets/js/145.3056455a.js"><link rel="prefetch" href="/notes/assets/js/146.97300387.js"><link rel="prefetch" href="/notes/assets/js/147.c552d920.js"><link rel="prefetch" href="/notes/assets/js/148.24cd5671.js"><link rel="prefetch" href="/notes/assets/js/149.39dd402e.js"><link rel="prefetch" href="/notes/assets/js/15.c8adf5ed.js"><link rel="prefetch" href="/notes/assets/js/150.1e0e74cc.js"><link rel="prefetch" href="/notes/assets/js/151.7a5ef1a1.js"><link rel="prefetch" href="/notes/assets/js/152.82103aef.js"><link rel="prefetch" href="/notes/assets/js/153.64f23cb0.js"><link rel="prefetch" href="/notes/assets/js/154.e10ca008.js"><link rel="prefetch" href="/notes/assets/js/155.26add57a.js"><link rel="prefetch" href="/notes/assets/js/156.baba0d11.js"><link rel="prefetch" href="/notes/assets/js/157.9ed8cc70.js"><link rel="prefetch" href="/notes/assets/js/158.a8f99100.js"><link rel="prefetch" href="/notes/assets/js/159.7a274487.js"><link rel="prefetch" href="/notes/assets/js/16.06250b71.js"><link rel="prefetch" href="/notes/assets/js/160.bf19e881.js"><link rel="prefetch" href="/notes/assets/js/161.ca8ce943.js"><link rel="prefetch" href="/notes/assets/js/162.ca4bba30.js"><link rel="prefetch" href="/notes/assets/js/163.3a76e583.js"><link rel="prefetch" href="/notes/assets/js/164.6ab4321a.js"><link rel="prefetch" href="/notes/assets/js/165.cdb63940.js"><link rel="prefetch" href="/notes/assets/js/166.5a97199c.js"><link rel="prefetch" href="/notes/assets/js/167.7e3ec094.js"><link rel="prefetch" href="/notes/assets/js/168.035592fa.js"><link rel="prefetch" href="/notes/assets/js/169.366a4304.js"><link rel="prefetch" href="/notes/assets/js/17.a6f856ad.js"><link rel="prefetch" href="/notes/assets/js/170.7c9cc147.js"><link rel="prefetch" href="/notes/assets/js/171.cf5a48d8.js"><link rel="prefetch" href="/notes/assets/js/172.19e2f582.js"><link rel="prefetch" href="/notes/assets/js/173.9a12226f.js"><link rel="prefetch" href="/notes/assets/js/174.f083b849.js"><link rel="prefetch" href="/notes/assets/js/18.9be01929.js"><link rel="prefetch" href="/notes/assets/js/19.0bff607d.js"><link rel="prefetch" href="/notes/assets/js/20.cceec89f.js"><link rel="prefetch" href="/notes/assets/js/21.876e28fc.js"><link rel="prefetch" href="/notes/assets/js/22.89577694.js"><link rel="prefetch" href="/notes/assets/js/23.fc1bb7ef.js"><link rel="prefetch" href="/notes/assets/js/24.e7122983.js"><link rel="prefetch" href="/notes/assets/js/25.02c1de2c.js"><link rel="prefetch" href="/notes/assets/js/26.16d528fe.js"><link rel="prefetch" href="/notes/assets/js/27.efc0eba1.js"><link rel="prefetch" href="/notes/assets/js/28.d688a8e3.js"><link rel="prefetch" href="/notes/assets/js/29.2584d6d0.js"><link rel="prefetch" href="/notes/assets/js/3.c81b0709.js"><link rel="prefetch" href="/notes/assets/js/30.5bef4ddc.js"><link rel="prefetch" href="/notes/assets/js/31.0b0aa28e.js"><link rel="prefetch" href="/notes/assets/js/32.f91948f2.js"><link rel="prefetch" href="/notes/assets/js/33.65519de3.js"><link rel="prefetch" href="/notes/assets/js/34.6a59642b.js"><link rel="prefetch" href="/notes/assets/js/36.c1229a87.js"><link rel="prefetch" href="/notes/assets/js/37.f45f88c7.js"><link rel="prefetch" href="/notes/assets/js/38.a292be28.js"><link rel="prefetch" href="/notes/assets/js/39.ac7b814f.js"><link rel="prefetch" href="/notes/assets/js/4.acc16a77.js"><link rel="prefetch" href="/notes/assets/js/40.6d1a2236.js"><link rel="prefetch" href="/notes/assets/js/41.cb3f7d02.js"><link rel="prefetch" href="/notes/assets/js/42.57119e51.js"><link rel="prefetch" href="/notes/assets/js/43.04d6c2fc.js"><link rel="prefetch" href="/notes/assets/js/44.3e7a3100.js"><link rel="prefetch" href="/notes/assets/js/45.f9bed2f1.js"><link rel="prefetch" href="/notes/assets/js/46.408d5e96.js"><link rel="prefetch" href="/notes/assets/js/47.42049855.js"><link rel="prefetch" href="/notes/assets/js/48.c07f0eb0.js"><link rel="prefetch" href="/notes/assets/js/49.763dad5f.js"><link rel="prefetch" href="/notes/assets/js/5.19114815.js"><link rel="prefetch" href="/notes/assets/js/50.16466921.js"><link rel="prefetch" href="/notes/assets/js/51.77613262.js"><link rel="prefetch" href="/notes/assets/js/52.371b49d2.js"><link rel="prefetch" href="/notes/assets/js/53.afdfb70b.js"><link rel="prefetch" href="/notes/assets/js/54.0700a309.js"><link rel="prefetch" href="/notes/assets/js/55.f17aa88f.js"><link rel="prefetch" href="/notes/assets/js/56.7ba59c60.js"><link rel="prefetch" href="/notes/assets/js/57.6ab33601.js"><link rel="prefetch" href="/notes/assets/js/58.3df2ea7e.js"><link rel="prefetch" href="/notes/assets/js/59.f05a40b5.js"><link rel="prefetch" href="/notes/assets/js/6.fbd39b4b.js"><link rel="prefetch" href="/notes/assets/js/60.e243c11f.js"><link rel="prefetch" href="/notes/assets/js/61.e56bf6b9.js"><link rel="prefetch" href="/notes/assets/js/62.aade55a7.js"><link rel="prefetch" href="/notes/assets/js/63.14962c3b.js"><link rel="prefetch" href="/notes/assets/js/64.a1883e51.js"><link rel="prefetch" href="/notes/assets/js/65.6c099679.js"><link rel="prefetch" href="/notes/assets/js/66.3e2bb8f1.js"><link rel="prefetch" href="/notes/assets/js/67.0fa3630d.js"><link rel="prefetch" href="/notes/assets/js/68.ed132600.js"><link rel="prefetch" href="/notes/assets/js/69.c7d0f351.js"><link rel="prefetch" href="/notes/assets/js/7.157e2031.js"><link rel="prefetch" href="/notes/assets/js/70.b6f8bbee.js"><link rel="prefetch" href="/notes/assets/js/71.a1072810.js"><link rel="prefetch" href="/notes/assets/js/72.b75efabd.js"><link rel="prefetch" href="/notes/assets/js/73.a670a6c0.js"><link rel="prefetch" href="/notes/assets/js/74.75ac7a5d.js"><link rel="prefetch" href="/notes/assets/js/75.d5442c48.js"><link rel="prefetch" href="/notes/assets/js/76.6ad52012.js"><link rel="prefetch" href="/notes/assets/js/77.ec21c444.js"><link rel="prefetch" href="/notes/assets/js/78.d2379aab.js"><link rel="prefetch" href="/notes/assets/js/79.ac499ef3.js"><link rel="prefetch" href="/notes/assets/js/8.c2e802f8.js"><link rel="prefetch" href="/notes/assets/js/80.deb3a426.js"><link rel="prefetch" href="/notes/assets/js/81.ea9cbddc.js"><link rel="prefetch" href="/notes/assets/js/82.b8544b95.js"><link rel="prefetch" href="/notes/assets/js/83.8c22bdcf.js"><link rel="prefetch" href="/notes/assets/js/84.4895fe5c.js"><link rel="prefetch" href="/notes/assets/js/85.93ab470a.js"><link rel="prefetch" href="/notes/assets/js/86.fd086a14.js"><link rel="prefetch" href="/notes/assets/js/87.7d842136.js"><link rel="prefetch" href="/notes/assets/js/88.d3ad256a.js"><link rel="prefetch" href="/notes/assets/js/89.0fdbabf5.js"><link rel="prefetch" href="/notes/assets/js/9.1e8ef9c9.js"><link rel="prefetch" href="/notes/assets/js/90.c979d5eb.js"><link rel="prefetch" href="/notes/assets/js/91.fffbe9ac.js"><link rel="prefetch" href="/notes/assets/js/92.f46c7ae3.js"><link rel="prefetch" href="/notes/assets/js/93.50976afb.js"><link rel="prefetch" href="/notes/assets/js/94.e9bd725d.js"><link rel="prefetch" href="/notes/assets/js/95.0cf70666.js"><link rel="prefetch" href="/notes/assets/js/96.d5f09b5d.js"><link rel="prefetch" href="/notes/assets/js/97.c2c13071.js"><link rel="prefetch" href="/notes/assets/js/98.b83d8452.js"><link rel="prefetch" href="/notes/assets/js/99.382efddd.js">
+    <link rel="stylesheet" href="/notes/assets/css/0.styles.046e0507.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notes/" class="home-link router-link-active"><!----> <span class="site-name">还隔这查文档，我上来就是一拳</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notes/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/notes/django-content/01-django介绍和相关术语.html" class="nav-link">
+  Django
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/vue-content/基础内容/vue初体验.html" class="nav-link">
+  基础内容
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/组件化/组件化.html" class="nav-link">
+  组件化
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/webpack/安装与基本设置.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/CLI脚手架/CLI安装与项目创建.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/Vue-router/前端路由.html" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/Vuex/介绍.html" class="nav-link">
+  vuex
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/axios网络模块/基本使用.html" class="nav-link">
+  axios网络模块
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/Uni-app/图片choose_preview_uploadFile.html" class="nav-link">
+  uni-app
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/常用代码和json文件/头像图片裁剪与上传.html" class="nav-link">
+  常用代码和json文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="css" class="dropdown-title"><span class="title">css</span> <span class="arrow down"></span></button> <button type="button" aria-label="css" class="mobile-dropdown-title"><span class="title">css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/css-content/css基础.html" class="nav-link">
+  css基础
+</a></li><li class="dropdown-item"><!----> <a href="/notes/css-content/常用网站.html" class="nav-link">
+  常用网站
+</a></li></ul></div></div><div class="nav-item"><a href="/notes/pieceknowledge/文档碎片操作dom.html" class="nav-link">
+  小知识点
+</a></div><div class="nav-item"><a href="/notes/diary/20210602.html" class="nav-link">
+  日记
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notes/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/notes/django-content/01-django介绍和相关术语.html" class="nav-link">
+  Django
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/vue-content/基础内容/vue初体验.html" class="nav-link">
+  基础内容
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/组件化/组件化.html" class="nav-link">
+  组件化
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/webpack/安装与基本设置.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/CLI脚手架/CLI安装与项目创建.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/Vue-router/前端路由.html" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/Vuex/介绍.html" class="nav-link">
+  vuex
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/axios网络模块/基本使用.html" class="nav-link">
+  axios网络模块
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/Uni-app/图片choose_preview_uploadFile.html" class="nav-link">
+  uni-app
+</a></li><li class="dropdown-item"><!----> <a href="/notes/vue-content/常用代码和json文件/头像图片裁剪与上传.html" class="nav-link">
+  常用代码和json文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="css" class="dropdown-title"><span class="title">css</span> <span class="arrow down"></span></button> <button type="button" aria-label="css" class="mobile-dropdown-title"><span class="title">css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/css-content/css基础.html" class="nav-link">
+  css基础
+</a></li><li class="dropdown-item"><!----> <a href="/notes/css-content/常用网站.html" class="nav-link">
+  常用网站
+</a></li></ul></div></div><div class="nav-item"><a href="/notes/pieceknowledge/文档碎片操作dom.html" class="nav-link">
+  小知识点
+</a></div><div class="nav-item"><a href="/notes/diary/20210602.html" class="nav-link">
+  日记
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/notes/vue-content/基础内容/vue初体验/" class="sidebar-heading clickable"><span>Vue</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/notes/django-content/01-django介绍和相关术语" class="sidebar-heading clickable open"><span>Django</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/django-content/01-django介绍和相关术语.html" class="sidebar-link">django介绍和相关术语</a></li><li><a href="/notes/django-content/02-python虚拟环境.html" class="sidebar-link">python虚拟环境</a></li><li><a href="/notes/django-content/03-项目搭建.html" class="sidebar-link">项目搭建</a></li><li><a href="/notes/django-content/04-django配置.html" class="sidebar-link">django配置</a></li><li><a href="/notes/django-content/05-URLConf调度器.html" class="sidebar-link">URLConf调度器</a></li><li><a href="/notes/django-content/06-模型.html" class="sidebar-link">模型</a></li><li><a href="/notes/django-content/07-视图.html" class="sidebar-link">视图</a></li><li><a href="/notes/django-content/09-admin后台管理.html" class="sidebar-link">admin后台管理</a></li><li><a href="/notes/django-content/10-会话技术.html" class="sidebar-link">会话技术</a></li><li><a href="/notes/django-content/11-分页器.html" class="sidebar-link">分页器</a></li><li><a href="/notes/django-content/12-web请求生命周期分析.html" class="sidebar-link">web请求生命周期分析</a></li><li><a href="/notes/django-content/13-验证码.html" class="sidebar-link">验证码</a></li><li><a href="/notes/django-content/14-中间件.html" class="sidebar-link">中间件</a></li><li><a href="/notes/django-content/15-日志.html" class="active sidebar-link">信号signals</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/django-content/15-日志.html#日志" class="sidebar-link">日志</a></li></ul></li><li><a href="/notes/django-content/16-信号signals.html" class="sidebar-link">django的信号signals</a></li><li><a href="/notes/django-content/17-缓存redis.html" class="sidebar-link">缓存redis</a></li><li><a href="/notes/django-content/18-Celery.html" class="sidebar-link">Celery</a></li><li><a href="/notes/django-content/19-DebugToolBar.html" class="sidebar-link">DebugToolBar</a></li><li><a href="/notes/django-content/20-REST framework.html" class="sidebar-link">REST framework</a></li><li><a href="/notes/django-content/21-项目部署.html" class="sidebar-link">项目部署</a></li><li><a href="/notes/django-content/22-文件云存储.html" class="sidebar-link">文件云存储</a></li><li><a href="/notes/django-content/23-富文本DjangoUeditor.html" class="sidebar-link">富文本DjangoUeditor</a></li><li><a href="/notes/django-content/24-文件上传和下载.html" class="sidebar-link">文件上传和下载</a></li><li><a href="/notes/django-content/25-项目开发流程.html" class="sidebar-link">项目开发流程</a></li><li><a href="/notes/django-content/26-邮箱验证和短信验证.html" class="sidebar-link">邮箱验证和短信验证</a></li><li><a href="/notes/django-content/27-模板jinja2引擎.html" class="sidebar-link">模板jinja2引擎</a></li><li><a href="/notes/django-content/28-JWT.html" class="sidebar-link">JWT</a></li><li><a href="/notes/django-content/29-微信小程序登录.html" class="sidebar-link">微信小程序登录</a></li><li><a href="/notes/django-content/30-爬虫.html" class="sidebar-link">爬虫</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/notes/css-content/css基础" class="sidebar-heading clickable"><span>Css</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/notes/pieceknowledge/文档碎片操作dom" class="sidebar-heading clickable"><span>小知识点</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/notes/diary/20210602" class="sidebar-heading clickable"><span>diary</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="信号signals"><a href="#信号signals" class="header-anchor">#</a> 信号signals</h1> <h2 id="日志"><a href="#日志" class="header-anchor">#</a> 日志</h2> <h4 id="一、django日志"><a href="#一、django日志" class="header-anchor">#</a> 一、django日志</h4> <p>######## 1、概述</p> <p>​	django框架的日志通过python内置的logging模块实现的，日记可以记录自定义的一些信息描述，也可以记录系统运行中的一些对象数据，还可以记录包括堆栈跟踪、错误代码之类的详细信息</p> <p>​	logging主要由4部分组成：Loggers、Handlers、Filters和Formatters</p> <p>######## 2、settings中完整的配置</p> <div class="language-python extra-class"><pre class="language-python"><code>LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">#### 固定值</span>
+    <span class="token string">'version'</span>：<span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">#### 格式器，详细见第6点</span>
+    <span class="token string">'formatters'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">#### 过滤器，详细见第5点</span>
+    <span class="token string">'filters'</span>：<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">#### 处理器，详细见第4点</span>
+    <span class="token string">'handlers'</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">#### 记录器，详细见第3点</span>
+    <span class="token string">'loggers'</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">#### 根记录器，配置等同普通记录器，但是没有propagate配置项</span>
+    <span class="token string">'root'</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">#### 默认为False。True：是将配置解释为现有配置的增量。False：配置会覆盖已有默认配置</span>
+    <span class="token string">'incremental'</span><span class="token punctuation">:</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+    <span class="token comment">#### 默认为True。禁用任何现有的非root记录器。如果设置了incremental=True，则此配置无效</span>
+    <span class="token string">'disable_existing_loggers'</span><span class="token punctuation">:</span> <span class="token boolean">False</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>######## 3、Loggers</p> <p>​	这个类是logging系统的入口</p> <p>​	python定义了日志的5个级别，分别对应python程序中日志信息的不同严重性（严重程度从上到下越来越严重，也就是级别越高）：</p> <ul><li>DEBUG：用于调试的最低级的系统信息</li> <li>INFO：一般性的系统信息</li> <li>WARNING：一些警告性的信息，发生了一些小问题，这些问题不影响系统的正常运行，但是也不建议出现</li> <li>ERROR：系统出现错误了，该错误会影响系统的正常运行，记录错误相关的信息</li> <li>CRITICAL：非常严重的问题，譬如可能引起系统崩溃的问题等</li></ul> <p>​	在使用logger记录日志时，每条日志消息还有日志级别，当logger记录该日志消息时，会将消息的级别和logger配置的日志级别进行比较，只有消息的级别达到或超过logger配置的日志级别，才会将该日志消息传递给handler进一步处理，否则该日志消息会被忽略</p> <p>​	PS：一般开发环境时，会启用DEBUG级别，而在生产环境中，启用WARNING或ERROR级别</p> <p>############ 1.settings中配置</p> <p>通过在settings中配置LOGGING配置项实现日志配置，共4个配置项（都是可选的，不过一般会指定handler）：</p> <ul><li>level：指定记录日志的级别，没有配置则处理所有级别的日子</li> <li>propagate：设置该记录器的日志是否传播到父记录器，不设置则是True</li> <li>filters：指定过滤器列表</li> <li>handlers：指定处理器列表</li></ul> <p>示例如下：</p> <div class="language-python extra-class"><pre class="language-python"><code>LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'version'</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>  <span class="token comment">#### 固定值，现在只有这一个版本</span>
+    <span class="token string">'disable_existing_loggers'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span> <span class="token comment">#### 设置已存在的logger不失效</span>
+    <span class="token string">'loggers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">''</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'console'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'django'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'console'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'propagate'</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'django.request'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'mail_admins'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'ERROR'</span><span class="token punctuation">,</span>
+            <span class="token string">'propagate'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'myproject.custom'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'console'</span><span class="token punctuation">,</span> <span class="token string">'mail_admins'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'INFO'</span><span class="token punctuation">,</span>
+            <span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'special'</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>说明：</p> <p>配置了4个 logger， 分别对应2个不同的handler（console输出日志到控制台，mail_admins输出日志到邮件）</p> <ul><li>''：默认的记录器，不指定特定名称，那么就是使用这个记录器，没有配置level，那么就是处理所有级别的日志，传递所有级别的日志到console控制器</li> <li>django：传递所有级别的日志到console控制器</li> <li>django.request：django记录器的子记录器，处理ERROR级别及以上的日志，propagate设置为 False，表明不传播日志给 &quot;django&quot;，该logger传递日志到mail_admins控制器</li> <li>myproject.custom：处理INFO级别及以上的日志，应用了一个 special 的过滤器来过滤日志，传递日志到2个控制器（['console', 'mail_admins']）处理</li></ul> <p>​	django框架有个默认的配置：DEFAULT_LOGGING，一旦配置了自己的LOGGING后，那么所有的默认的LOGGER全部都失效，失效不等于没有记录器了，而是说记录器不起作用了，即不会记录日志，也不会将日志传播给父记录器。因此你应该非常小心使用，因为你会感觉你丢了日志一样，可以手动设置同名的logger实现覆盖，如：</p> <div class="language-python extra-class"><pre class="language-python"><code>LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'version'</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token string">'disable_existing_loggers'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+    <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'file'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'DEBUG'</span><span class="token punctuation">,</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'logging.FileHandler'</span><span class="token punctuation">,</span>
+            <span class="token string">'filename'</span><span class="token punctuation">:</span> <span class="token string">'/path/to/django/debug.log'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'loggers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">####  覆盖了 django 记录器，所有django的记录日志最后全部写入到文件中</span>
+        <span class="token string">'django'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'file'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'DEBUG'</span><span class="token punctuation">,</span>
+            <span class="token string">'propagate'</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>​	disable_existing_loggers默认是True，除非设置disable_existing_loggers为False，那么默认配置的记录器才会起作用</p> <div class="language-python extra-class"><pre class="language-python"><code>LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'disable_existing_loggers'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>​	配置还可以使用系统变量，如下示例中读取 DJANGO_LOG_LEVEL  环境变量：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> os
+
+LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'version'</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token string">'disable_existing_loggers'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+    <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'console'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'logging.StreamHandler'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'loggers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'django'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'console'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> os<span class="token punctuation">.</span>getenv<span class="token punctuation">(</span><span class="token string">'DJANGO_LOG_LEVEL'</span><span class="token punctuation">,</span> <span class="token string">'INFO'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>​</p> <p>############ 2.logger的简单使用</p> <p>在诸如views.py中：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> logging
+
+<span class="token comment">#### 生成一个以当前文件名为名字的logger实例</span>
+logger <span class="token operator">=</span> logging<span class="token punctuation">.</span>getLogger<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+<span class="token comment">#### __name__ 也可以换成在settings中配置的 logger 名称，生成指定的logger</span>
+logger_custom <span class="token operator">=</span> logging<span class="token punctuation">.</span>getLogger<span class="token punctuation">(</span><span class="token string">'myproject.custom'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    logger<span class="token punctuation">.</span>debug<span class="token punctuation">(</span><span class="token string">&quot;进入index视图函数&quot;</span><span class="token punctuation">)</span>
+    logger_custom<span class="token punctuation">.</span>debug<span class="token punctuation">(</span><span class="token string">&quot;进入index视图函数&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li><p>getLogger(_<em>name</em>_)：记录器名使用模块名，这是基于每个模块过滤和处理日志记录调用，对应默认记录器，即名称为 '' 的</p></li> <li><p>getLogger('myproject.custom')：通过 &quot;.&quot; 符号分隔的方式，定义记录器名称的层次结构，'myproject' 是跟记录器， 'myproject.custom'是子记录器，甚至 'myproject.custom.child' 是孙辈的记录器。使用层次结构的作用是因为子记录器是可以传播日志记录给父记录器的，最终传播到根记录器。默认就是传播的，如果不想传播，那么需要在logger的配置中使用'propagate': False</p></li></ul> <p>############ 3.常用方法</p> <p>Logger.debug(msg)、Logger.info(msg)、Logger.warning(msg)、Logger.error(msg)、Logger.critical(msg) ，分别对应5个不同的日志级别</p> <p>Logger.log(level,  msg) 记录日志，手动指定level，level的选择是CRITICAL = 50，ERROR = 40，WARNING = 30，INFO = 20，DEBUG = 10，需要填写数字，譬如 50或logging.DEBUG</p> <p>Logger.exception()：等同于Logger.error(msg, exc_info=True)，输出异常的堆栈信息</p> <p>############ 4.不常用方法</p> <p>Logger.setLevel(lel):指定最低的日志级别，低于lel的级别将被忽略。debug是最低的内置级别，critical为最高</p> <p>Logger.addFilter(filt)、Logger.removeFilter(filt):添加或删除指定的filter Logger.addHandler(hdlr)、Logger.removeHandler(hdlr)：增加或删除指定的handler</p> <p>############ 5.django内置logger</p> <p>​	内置的logger在django项目运行中会自动记录日志，与我们手动创建的logger的执行没有关系，除非我们也创建相同的logger</p> <p>​	django框架调用的地方在：django.core.servers.basehttp中（如WSGIRequestHandler）</p> <ul><li><p>django：django框架中所有消息的记录器，一般使用它的子记录器，而不是它发布消息，因为默认情况下子记录器的日志会传播到根记录器django，除非设置 'propagate': False</p></li> <li><p>django.request：记录与请求处理相关的消息。5XX响应作为ERROR消息; 4XX响应作为WARNING消息引发。记录到django.security记录器的请求不会记录到django.request中</p> <p>发送给此记录器的消息具有以下额外上下文：</p> <ul><li>status_code：与请求关联的HTTP响应代码</li> <li>request：生成日志消息的请求对象。</li></ul></li> <li><p>django.server：记录与runserver命令调用的服务器接收的请求的处理相关的消息。5XX响应记录为ERROR 消息，4XX响应记录为WARNING消息，其他所有响应记录为INFO。</p> <p>发送给此记录器的消息具有以下额外上下文：</p> <ul><li>status_code：与请求关联的HTTP响应代码。</li> <li>request：生成日志消息的请求对象。</li></ul></li> <li><p>django.template：记录与模板呈现相关的消息</p></li> <li><p>django.db.backends：记录代码和数据库交互相关的消息，例如，请求执行的每个SQL语句都会记录为DEBUG级别的日志。这个记录器只有在settings.DEBUG设置为True时才启用，并且不记录事务管理（如：BEGIN, COMMIT, 和 ROLLBACK）</p> <p>发送给此记录器的消息具有以下额外上下文：</p> <ul><li>duration：执行SQL语句所花费的时间。</li> <li>sql：已执行的SQL语句。</li> <li>params：SQL调用中使用的参数</li></ul></li> <li><p>django.security.*：记录任何SuspiciousOperation和其他安全相关错误（django.security.csrf ）的消息，SuspiciousOperation子类型有：</p> <p>DisallowedHost
+DisallowedModelAdminLookup
+DisallowedModelAdminToField
+DisallowedRedirect
+InvalidSessionKey
+RequestDataTooBig
+SuspiciousFileOperation
+SuspiciousMultipartForm
+SuspiciousSession
+TooManyFieldsSent</p> <p>使用如：django.security.DisallowedHost</p></li> <li><p>django.db.backends.schema:记录数据库迁移过程中的日志，但是不记录执行的查询SQL语句等，发送给此记录器的消息具有以下额外上下文：</p> <ul><li>sql：已执行的SQL语句。</li> <li>params：SQL调用中使用的参数</li></ul></li></ul> <p>######## 4、Handlers</p> <p>​	这个类是确定logger中消息发生的引擎程序，描述特定的日志记录行为，譬如控制台打印、写入日志文件、通过网络进行发送等</p> <p>​	与logger一样，handler也具有日志级别，如果日志记录的日志级别未达到或超过handler的级别，则handler将忽略该消息。</p> <p>​	一个logger可以有多个handler，每个handler可以有不同的日志级别和记录方法</p> <p>############ 1.settings中配置</p> <p>4个参数（如下），加上对应class类的初始化参数</p> <ul><li>class（必需）：处理程序类的名称</li> <li>level（可选的）：处理程序的级别</li> <li>formatter（可选的）：处理程序的格式化程序</li> <li>filters（可选的）：处理程序的过滤器的列表</li></ul> <div class="language-python extra-class"><pre class="language-python"><code>LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'console'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'INFO'</span><span class="token punctuation">,</span>
+            <span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'require_debug_true'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'logging.StreamHandler'</span><span class="token punctuation">,</span>
+            <span class="token string">'formatter'</span><span class="token punctuation">:</span> <span class="token string">'simple'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'mail_admins'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'ERROR'</span><span class="token punctuation">,</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.AdminEmailHandler'</span><span class="token punctuation">,</span>
+            <span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'special'</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>说明：</p> <p>配置了2个handler，使用了2个filter：require_debug_true和special， 使用了1个formatter：simple</p> <ul><li>console：使用logging.StreamHandler，记录INFO级别及以上的日志到sys.stderr，使用simple格式化输出内容</li> <li>mail_admins：使用django.utils.log.AdminEmailHandler，将ERROR及以上的日志通过special过滤器过滤后，发送邮件到管理员邮箱（需要配置settings中的一些其他的信息，譬如ADMINS等）</li></ul> <p>############ 2.不常用方法</p> <p>Handler.setLevel(level):指定被处理的信息级别，低于level级别的信息将被忽略</p> <p>Handler.setFormatter(fmt)：给这个handler选择一个格式fmt</p> <p>Handler.addFilter(filt)、Handler.removeFilter(filt)：新增或删除一个filter对象</p> <p>############ 3.内置处理器</p> <ol><li><p>python3的logging中的handler：</p> <ul><li><p>StreamHandler：输出到stream，未指定则使用sys.stderr输出到控制台</p></li> <li><p>FileHandler：继承自StreamHandler，输出到文件，默认情况下，文件无限增长</p> <p>初始化参数：filename，mode ='a'，encoding = None，delay = False</p> <p>delay如果为True，那么会延迟到第一次调用emit写入数据时才打开文件</p> <p>配置：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'file'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'DEBUG'</span><span class="token punctuation">,</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'logging.FileHandler'</span><span class="token punctuation">,</span>
+            <span class="token string">'filename'</span><span class="token punctuation">:</span> <span class="token string">'/path/to/django/app.log'</span><span class="token punctuation">,</span> <span class="token comment">####参数配置在这里，多个参数按顺序继续配置即可， 如果要添加encoding，那么在下面添加 encoding: 'utf-8' 即可</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>NullHandler：没有任何输出，避免出现错误：No handlers could be found for logger XXX</p></li> <li><p>WatchedFileHandler：自动重开log文件，配合别的会自动切分的log文件使用</p></li> <li><p>RotatingFileHandler：自动按大小切分的log文件</p> <p>初始化参数：filename，mode ='a'，maxBytes = 0，backupCount = 0，encoding = None，delay = False</p> <p>maxBytes：最大字节数，超过时创建新的日志文件，如果backupCount或maxBytes有一个为0，那么就一直使用一个文件</p> <p>backupCount：最大文件个数，新文件的扩展名是指定的文件后加序号&quot;.1&quot;等，譬如：backupCount=5，基础文件名为：app.log，那么达到指定maxBytes之后，会关闭文件app.log，将app.log重命名为app.log.1，如果app.log.1存在，那么就顺推，先将 app.log.1重命名为app.log.2，再将现在的app.log命名为app.log.1，最大创建到app.log.5(旧的app.log.5会被删除)，然后重新创建app.log文件进行日志写入，也就是永远只会对app.log文件进行写入。</p></li> <li><p>TimedRotatingFileHandler：按时间自动切分的log文件，文件后缀 %Y-%m-%d_%H-%M-%S</p> <p>初始化参数：filename, when='h', interval=1, backupCount=0, encoding=None, delay=False, utc=False, atTime=None</p> <p>when：时间间隔类型，不区分大小写</p> <div class="language- extra-class"><pre class="language-text"><code>'S'：秒
+'M'：分钟
+'H'：小时
+'D'：天
+'W0'-'W6'：星期几（0 = 星期一）
+'midnight'：如果atTime未指定，则在 0点0分0秒 翻转，否则在atTime时间翻转
+</code></pre></div><p>interval：间隔的数值</p> <p>backupCount： 文件个数</p> <p>encoding：编码</p> <p>delay：True是写入文件时才打开文件，默认False，实例化时即打开文件</p> <p>utc：False则使用当地时间，True则使用UTC时间</p> <p>atTime：必须是datetime.time实例，指定文件第一次切分的时间，when设置为S,M,H,D时，该设置会被忽略</p></li> <li><p>SocketHandler：通过TCP套接字发送日志记录消息</p> <p>初始化参数：host, port</p></li> <li><p>DatagramHandler：通过UDP套接字发送日志记录消息</p></li> <li><p>SysLogHandler ：发送记录消息到远程或本地Unix系统日志</p></li> <li><p>NTEventLogHandler：发送日志消息到本地的Windows NT，Windows 2000或Windows XP事件日志</p></li> <li><p>SMTPHandler：通过email发送日志记录消息</p> <p>初始化参数：mailhost, fromaddr, toaddrs, subject, credentials=None, secure=None, timeout=5.0</p> <p>mailhost：发件人邮箱服务器地址（默认25端口）或地址和指定端口的元组，如：('smtp.163.com', 25)</p> <p>fromaddr：发件人邮箱</p> <p>toaddrs：收件人邮箱列表</p> <p>subject：邮件标题</p> <p>credentials：如果邮箱服务器需要登录，则传递(username, password)元组</p> <p>secure：使用TLS加密协议</p></li> <li><p>MemoryHandler ：在内存中的日志记录缓冲，定期将其发送到目标处理程序，只要缓冲区已满，或者发生某个严重程度或更高的事件，就会发生发送</p></li> <li><p>HTTPHandler：发送记录消息到Web服务器，使用GET或POST</p></li> <li><p>QueueHandler：发送记录消息到队列中，适合多进程（multiprocessing）场景</p></li> <li><p>QueueListener：从队列中接收消息，适合多进程（multiprocessing）场景，用于和QueueHandler搭配</p></li></ul></li> <li><p>django内置的handler：</p> <ul><li><p>AdminEmailHandler：会将收到的每一条日志消息发送一个邮件到ADMINS指定的邮箱地址</p> <p>必须settings中设置 DEBUG=False 才起作用</p> <p>示例配置：</p> <div class="language-python extra-class"><pre class="language-python"><code>DEBUG<span class="token operator">=</span><span class="token boolean">False</span>
+
+EMAIL_BACKEND <span class="token operator">=</span> <span class="token string">'django.core.mail.backends.smtp.EmailBackend'</span>
+EMAIL_HOST <span class="token operator">=</span> <span class="token string">'smtp.qq.com'</span>  <span class="token comment">#### smtp地址</span>
+EMAIL_PORT <span class="token operator">=</span> <span class="token number">25</span>
+EMAIL_HOST_USER <span class="token operator">=</span> <span class="token string">'xxxx@qq.com'</span>  <span class="token comment">#### smtp 服务器的用户名</span>
+EMAIL_HOST_PASSWORD <span class="token operator">=</span> <span class="token string">'xxxxxxxx'</span>  <span class="token comment">#### smtp服务器的密码</span>
+SERVER_EMAIL <span class="token operator">=</span> <span class="token string">'xxxx@qq.com'</span>
+ADMINS <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token string">'Terry'</span><span class="token punctuation">,</span> <span class="token string">'xxxx@qq.com'</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+</code></pre></div><p>ADMINS默认是[]，示例配置：[('John', 'john@example.com'), ('Mary', 'mary@example.com')]</p> <p>如果日志记录包含request属性，则请求的完整详细信息将包含在电子邮件中。</p> <p>如果客户端的IP地址在INTERNAL_IPS设置中，则电子邮件主题将包含短语“内部IP” ; 如果没有，它将包括“外部IP”。</p> <p>如果日志记录包含堆栈跟踪信息，则该堆栈跟踪将包含在电子邮件中。</p> <p>初始化参数：include_html=False, email_backend=None</p> <p>include_html：该值设置为True，并且settings中设置DEBUG=True时，则会在邮件中包括含有调试网页的全部内容的HTML附件，该附件包含完整的回溯，包含堆栈每个级别的局部变量的名称和值，以及Django设置的值，会比较敏感，谨慎使用</p> <p>email_backend：指定邮件后台，没设置使用django默认的</p> <p>简单配置如下：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'mail_admins'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'ERROR'</span><span class="token punctuation">,</span>
+        <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.AdminEmailHandler'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>覆盖django默认的邮件后台，配置：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'mail_admins'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'ERROR'</span><span class="token punctuation">,</span>
+        <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.AdminEmailHandler'</span><span class="token punctuation">,</span>
+        <span class="token string">'email_backend'</span><span class="token punctuation">:</span> <span class="token string">'django.core.mail.backends.filebased.EmailBackend'</span><span class="token punctuation">,</span>
+        <span class="token string">'include_html'</span><span class="token punctuation">:</span> <span class="token boolean">True</span> <span class="token comment">#### 信息中包含html页面</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div></li></ul></li></ol> <p>############ 4.自定义处理器</p> <p>​	任意自定义的class，继承自logging.Handler，并且实现emit和flush方法（如下logging内置的StreamHandler类）：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> logging <span class="token keyword">import</span> Handler
+
+<span class="token keyword">class</span> <span class="token class-name">StreamHandler</span><span class="token punctuation">(</span>Handler<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    
+    terminator <span class="token operator">=</span> <span class="token string">'\n'</span>
+    
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> stream<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        Handler<span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> stream <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            stream <span class="token operator">=</span> sys<span class="token punctuation">.</span>stderr
+        self<span class="token punctuation">.</span>stream <span class="token operator">=</span> stream
+
+    <span class="token keyword">def</span> <span class="token function">flush</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>acquire<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>stream <span class="token keyword">and</span> <span class="token builtin">hasattr</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>stream<span class="token punctuation">,</span> <span class="token string">&quot;flush&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>stream<span class="token punctuation">.</span>flush<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">finally</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>release<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">emit</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> record<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            msg <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>record<span class="token punctuation">)</span>
+            stream <span class="token operator">=</span> self<span class="token punctuation">.</span>stream
+            stream<span class="token punctuation">.</span>write<span class="token punctuation">(</span>msg<span class="token punctuation">)</span>
+            stream<span class="token punctuation">.</span>write<span class="token punctuation">(</span>self<span class="token punctuation">.</span>terminator<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>flush<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>handleError<span class="token punctuation">(</span>record<span class="token punctuation">)</span>
+
+</code></pre></div><p>######## 5、Filters</p> <p>​	过滤器filter用于提供对日志记录从logger传递到handler的附加控制</p> <p>​	默认情况下，logger和handler将处理满足日志级别要求的任何日志消息，但是，通过安装filter，可以在日志记录过程中添加其他条件。例如，可以安装仅允许ERROR级别 来自特定源的消息的filter。</p> <p>​	filter还可用于在发出之前修改日志记录。例如，如果满足一组特定条件，可以编写一个过滤器，将ERROR日志记录降级为WARNING记录。</p> <p>​	filter可以安装在logger或handler上; 可以在链中使用多个filter来执行多个过滤操作。</p> <p>############ 1.settings中配置</p> <div class="language-python extra-class"><pre class="language-python"><code>LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'special'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'()'</span><span class="token punctuation">:</span> <span class="token string">'project.logging.SpecialFilter'</span><span class="token punctuation">,</span>
+            <span class="token string">'foo'</span><span class="token punctuation">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'require_debug_true'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'()'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.RequireDebugTrue'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>说明：</p> <p>配置了2个过滤器</p> <ul><li><p>special：使用自定义的SpecialFilter类，传入初始化参数 foo='bar'</p></li> <li><p>require_debug_true：使用类：RequireDebugTrue</p></li></ul> <p>############ 2.内置过滤器</p> <ol><li><p>python内置的过滤器：</p> <p>日志过滤器的父类：Filter，一般不直接使用</p></li> <li><p>django内置的过滤器：</p> <ul><li><p>CallbackFilter：</p> <p>初始化参数：callback</p> <p>callback：为每个记录调用callback，如果callback返回True，则允许日志通过，如果callback返回False，则不允许该日志通过</p> <p>示例：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#### callback函数：</span>
+<span class="token keyword">def</span> <span class="token function">skip_unreadable_post</span><span class="token punctuation">(</span>record<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> record<span class="token punctuation">.</span>exc_info<span class="token punctuation">:</span>
+        exc_type<span class="token punctuation">,</span> exc_value <span class="token operator">=</span> record<span class="token punctuation">.</span>exc_info<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>exc_value<span class="token punctuation">,</span> UnreadablePostError<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
+    <span class="token keyword">return</span> <span class="token boolean">True</span>
+
+<span class="token comment">#### filter配置：</span>
+<span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'skip_unreadable_posts'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'()'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.CallbackFilter'</span><span class="token punctuation">,</span>
+        <span class="token string">'callback'</span><span class="token punctuation">:</span> skip_unreadable_post<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div></li> <li><p>RequireDebugFalse：仅在settings.DEBUG为False时传递记录</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'require_debug_false'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'()'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.RequireDebugFalse'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>RequireDebugTrue：仅在settings.DEBUG为True时传递记录</p></li></ul></li></ol> <p>############ 3.自定义过滤器</p> <p>​	任意自定义的class，继承自logging.Filter，并且实现filter方法（如下django内置的RequireDebugFalse类）</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">RequireDebugFalse</span><span class="token punctuation">(</span>logging<span class="token punctuation">.</span>Filter<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">filter</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> record<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token keyword">not</span> settings<span class="token punctuation">.</span>DEBUG
+    
+<span class="token keyword">class</span> <span class="token class-name">TestFilter</span><span class="token punctuation">(</span>logging<span class="token punctuation">.</span>Filter<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">,</span> exist_word<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>exist_word <span class="token operator">=</span> exist_word
+
+    <span class="token keyword">def</span> <span class="token function">filter</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> record<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> self<span class="token punctuation">.</span>exist_word <span class="token keyword">or</span> self<span class="token punctuation">.</span>exist_word <span class="token keyword">in</span> record<span class="token punctuation">.</span>msg<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
+</code></pre></div><p>######## 6、Formatters</p> <p>​	日志记录最终需要呈现为文本，formatter程序描述该文本的确切格式。formatter通常由包含LogRecord属性的Python格式化字符串组成 ; 但是，也可以编写自定义formatter来实现特定的格式化行为。</p> <p>############ 1.settings中配置：</p> <p>3个参数（具体看后面的Formatter类）：</p> <ul><li>()：指定格式器的类，不指定的话，默认使用logging.Formatter</li> <li>format：格式化字符串</li> <li>style：样式选择</li> <li>datefmt：日期格式化字符串，使用的是python中时间日期格式化符号</li></ul> <div class="language-python extra-class"><pre class="language-python"><code>LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token string">'formatters'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'verbose'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'()'</span><span class="token punctuation">:</span> <span class="token string">'logging.Formatter'</span><span class="token punctuation">,</span>
+            <span class="token string">'format'</span><span class="token punctuation">:</span> <span class="token string">'{levelname} {asctime} {module} {process:d} {thread:d} {message}'</span><span class="token punctuation">,</span>
+            <span class="token string">'style'</span><span class="token punctuation">:</span> <span class="token string">'{'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'simple'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'format'</span><span class="token punctuation">:</span> <span class="token string">'{levelname} {message}'</span><span class="token punctuation">,</span>
+            <span class="token string">'style'</span><span class="token punctuation">:</span> <span class="token string">'{'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>说明：</p> <p>配置了2个格式器：</p> <ul><li>simple：只输出简单的：日志级别名称 日志消息</li> <li>verbose：输出：日志级别名称 生成日志消息的时间 模块 进程 线程 日志消息</li></ul> <p>############ 2.内置格式器</p> <ol><li><p>python内置的格式器</p> <ul><li><p>Formatter：默认格式器</p> <p>初始化参数：fmt=None, datefmt=None, style='%'</p> <ul><li>fmt：格式化字符串，指定输出格式，如：'{levelname}{process:d}{message}'</li></ul> <div class="language- extra-class"><pre class="language-text"><code>	%(name)s：记录器logger的名称
+    %(levelno)s：日志级别对应的数字
+    %(levelname)s：日志级别名称
+    %(pathname)s：日志记录调用的源文件的完整路径
+    %(filename)s：日志记录调用的源文件名
+    %(module)s：模块名
+    %(lineno)d：日志调用的行数
+    %(funcName)s：函数名
+    %(created)f：日志创建时间，time.time()
+    %(asctime)s：日志创建时间，文本类型
+    %(msecs)d：日志创建时间的毫秒部分
+    %(relativeCreated)d：日志创建时间 - 加载日志模块的时间 的 毫秒数
+    %(thread)d：线程ID
+    %(threadName)s：线程名
+    %(process)d：进程ID
+    %(processName)s：进程名
+    %(message)s：日志消息
+</code></pre></div><ul><li><p>datefmt：日期格式化字符串，为None则使用ISO8601格式化，如：'2010-01-01 08:03:26,870'</p></li> <li><p>style：'%'，'{' 或 '$'，3选一：</p> <ul><li>'%'：默认是这个，使用python的 % 格式化 ，  如： %(levelname)s</li> <li>'{'：使用 str.format格式化（django框架使用这个）， 如：{levelname}</li> <li>'$'：使用类 string.Template 格式化，如：$levelname</li></ul></li></ul></li> <li><p>BufferingFormatter：一种适于格式化批量记录的格式器，对每条记录都使用指定的格式器进行格式化</p> <p>初始化参数：linefmt=None</p> <p>linefmt：指定格式器，设置为None使用上述的默认Formatter</p></li></ul></li> <li><p>django内置的格式器</p> <ul><li>ServerFormatter：根据status_code不同，将日志消息格化式成不同的颜色的消息</li></ul></li></ol> <p>######## 7、logging.LogRecord对象</p> <p>​	每次logger记录日志时，都会自动创建该LogRecord实例</p> <ol><li>初始化参数：name，level，pathname，lineno，msg，args，exc_info，func = None，sinfo = None</li></ol> <p>说明：</p> <ul><li>name - 用于记录此LogRecord表示的事件的记录器的名称</li> <li>level - 日志记录事件的数字级别（DEBUG是10，INFO是20，以此类推），并将转换为LogRecord的两个属性： 对于数值levelno和对应的级别名称levelname</li> <li>pathname - 进行日志记录调用的源文件的完整路径名</li> <li>lineno - 进行日志记录调用的源文件中的行号</li> <li>msg - 事件描述消息，可能是带有可变数据占位符的格式字符串</li> <li>args - 要合并到msg参数中以获取事件描述的可变数据</li> <li>exc_info - 包含当前异常信息的异常元组，或者None（没有可用的异常信息）</li> <li>func - 调用日志记录调用的函数或方法的名称</li> <li>sinfo - 表示当前线程中堆栈基础的堆栈信息的文本字符串，直到日志记录调用</li></ul> <ol start="2"><li><p>方法</p> <ul><li>getMessage：返回用户提供的参数与消息合并后的消息</li></ul></li> <li><p>属性</p> <p>首先是第6点Formatters中内置格式器Formatters类的 fmt 属性中，描述的类似：%(name)s 中的 name 就是 该对象的属性</p> <p>其他属性如下：</p> <ul><li>args：元组或字典（只有一个参数是），用于合并日志消息</li> <li>exc_info：异常元组（类似：sys.exc_info），没有异常则是None</li> <li>msg：日志记录调用中传递的格式字符串，可以合并args生成日志消息</li> <li>stack_info：在当前线程中从堆栈底部堆栈帧信息（如果有的话），直到并包括记录调用的堆栈帧</li></ul></li></ol> <p>######## 8、项目中应用日志</p> <p>############ 1、默认配置</p> <p>​	不进行额外的配置，直接在项目中使用logger，则会使用django.utils.log的默认配置DEFAULT_LOGGING，默认的情况如下：</p> <div class="language-python extra-class"><pre class="language-python"><code>DEFAULT_LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'version'</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token string">'disable_existing_loggers'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+    <span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'require_debug_false'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'()'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.RequireDebugFalse'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'require_debug_true'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'()'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.RequireDebugTrue'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'formatters'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'django.server'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'()'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.ServerFormatter'</span><span class="token punctuation">,</span>
+            <span class="token string">'format'</span><span class="token punctuation">:</span> <span class="token string">'[{server_time}] {message}'</span><span class="token punctuation">,</span>
+            <span class="token string">'style'</span><span class="token punctuation">:</span> <span class="token string">'{'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'console'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'INFO'</span><span class="token punctuation">,</span>
+            <span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'require_debug_true'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'logging.StreamHandler'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'django.server'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'INFO'</span><span class="token punctuation">,</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'logging.StreamHandler'</span><span class="token punctuation">,</span>
+            <span class="token string">'formatter'</span><span class="token punctuation">:</span> <span class="token string">'django.server'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'mail_admins'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'ERROR'</span><span class="token punctuation">,</span>
+            <span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'require_debug_false'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.AdminEmailHandler'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'loggers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'django'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'console'</span><span class="token punctuation">,</span> <span class="token string">'mail_admins'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'INFO'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'django.server'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'django.server'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'INFO'</span><span class="token punctuation">,</span>
+            <span class="token string">'propagate'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><p>如果设置DEBUG=True，那么会将除django.server以外的INFO及以上的日志输出到控制台</p></li> <li><p>如果设置DEBUG=False，那么会将除django.server以外的ERROR和CRITICAL级别的日志传递到AdminEmailHandler</p></li> <li><p>与DEBUG设置无关，所有的django.server记录器的日志，INFO及以上级别的都会输出到控制台</p> <p>之所以有上述行为，是因为除了django.server记录器外其他内置记录器都会传播消息到根记录器django，而根记录器django使用了console和mail_admins处理器</p></li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#### 这是views视图模块</span>
+<span class="token keyword">import</span> logging
+
+<span class="token comment">#### 这个 logger 只会在控制台输出 warning及以上的日志</span>
+logger <span class="token operator">=</span> logging<span class="token punctuation">.</span>getLogger<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+<span class="token comment">#### 这个logger 会输出 info及以上的日志</span>
+logger_server <span class="token operator">=</span> logging<span class="token punctuation">.</span>getLogger<span class="token punctuation">(</span><span class="token string">'django.server'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    logger<span class="token punctuation">.</span>debug<span class="token punctuation">(</span><span class="token string">'debug 测试'</span><span class="token punctuation">)</span>
+    logger<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'info 测试-------------------'</span><span class="token punctuation">)</span>
+    logger<span class="token punctuation">.</span>warning<span class="token punctuation">(</span><span class="token string">'warning 测试'</span><span class="token punctuation">)</span>
+    logger<span class="token punctuation">.</span>error<span class="token punctuation">(</span><span class="token string">'error 测试'</span><span class="token punctuation">)</span>
+    logger_server<span class="token punctuation">.</span>debug<span class="token punctuation">(</span><span class="token string">'debug 测试'</span><span class="token punctuation">)</span>
+    logger_server<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'info 测试-------------------'</span><span class="token punctuation">)</span>
+    logger_server<span class="token punctuation">.</span>warning<span class="token punctuation">(</span><span class="token string">'warning 测试'</span><span class="token punctuation">)</span>
+    logger_server<span class="token punctuation">.</span>error<span class="token punctuation">(</span><span class="token string">'error 测试'</span><span class="token punctuation">)</span>
+</code></pre></div><p>############ 2、一般应用</p> <ol><li><p>在根目录下建立 log 目录</p></li> <li><p>在settings中配置：</p> <div class="language-python extra-class"><pre class="language-python"><code>BASE_LOG_DIR <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>BASE_DIR<span class="token punctuation">,</span> <span class="token string">&quot;log&quot;</span><span class="token punctuation">)</span>
+
+LOGGING <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'version'</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token string">'disable_existing_loggers'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+    <span class="token string">'formatters'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'standard'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'format'</span><span class="token punctuation">:</span> <span class="token string">'[%(levelname)s][%(asctime)s][%(filename)s:%(lineno)d:%(funcName)s] %(message)s'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'simple'</span><span class="token punctuation">:</span><span class="token punctuation">{</span>
+            <span class="token string">'format'</span><span class="token punctuation">:</span><span class="token string">'[%(levelname)s][%(asctime)s] %(message)s'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'require_debug_true'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'()'</span><span class="token punctuation">:</span> <span class="token string">'django.utils.log.RequireDebugTrue'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'console'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'DEBUG'</span><span class="token punctuation">,</span>
+            <span class="token string">'filters'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'require_debug_true'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'logging.StreamHandler'</span><span class="token punctuation">,</span>
+            <span class="token string">'formatter'</span><span class="token punctuation">:</span> <span class="token string">'simple'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'file'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'INFO'</span><span class="token punctuation">,</span>
+            <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'logging.handlers.RotatingFileHandler'</span><span class="token punctuation">,</span>
+            <span class="token string">'filename'</span><span class="token punctuation">:</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>BASE_LOG_DIR<span class="token punctuation">,</span> <span class="token string">&quot;log_study.log&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+            <span class="token string">'maxBytes'</span><span class="token punctuation">:</span> <span class="token number">1024</span> <span class="token operator">*</span> <span class="token number">1024</span> <span class="token operator">*</span> <span class="token number">50</span><span class="token punctuation">,</span>  <span class="token comment">#### 日志大小 50M</span>
+            <span class="token string">'backupCount'</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> 
+            <span class="token string">'formatter'</span><span class="token punctuation">:</span> <span class="token string">'standard'</span><span class="token punctuation">,</span>
+            <span class="token string">'encoding'</span><span class="token punctuation">:</span> <span class="token string">'utf-8'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'loggers'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">''</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">#### 部署到生产环境之后可以把'console'移除</span>
+            <span class="token string">'handlers'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'console'</span><span class="token punctuation">,</span> <span class="token string">'file'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">'level'</span><span class="token punctuation">:</span> <span class="token string">'DEBUG'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>注意：RotatingFileHandler在生成新的文件时，会抛出 PermissionError 异常(其它分割文件的也同样会出现)，是因为django自带的简易web服务器，启动时默认启动2个进程，以便于实现 reload 的功能，如果要避免此错误，那么必须修改manage.py的启动参数为：</p> <p>​	runserver --noreload</p> <p>但是增加了 --noreload 这个参数后，web服务器不会自动检测代码的修改和重启服务</p></li> <li><p>视图函数中使用logger：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> logging
+
+<span class="token comment">#### __name__ 模块logger，对应settings中的 名称为：'' 的 logger</span>
+logger <span class="token operator">=</span> logging<span class="token punctuation">.</span>getLogger<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    logger<span class="token punctuation">.</span>debug<span class="token punctuation">(</span><span class="token string">'debug 测试'</span><span class="token punctuation">)</span>
+    logger<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'info 测试'</span><span class="token punctuation">)</span>
+    logger<span class="token punctuation">.</span>warning<span class="token punctuation">(</span><span class="token string">'warning 测试'</span><span class="token punctuation">)</span>
+    logger<span class="token punctuation">.</span>error<span class="token punctuation">(</span><span class="token string">'error 测试'</span><span class="token punctuation">)</span>
+</code></pre></div></li> <li><p>结果：</p> <p>console控制台输出：</p> <div class="language- extra-class"><pre class="language-text"><code>[INFO][2019-08-06 13:08:25,121] info 测试
+[WARNING][2019-08-06 13:08:25,122] warning 测试
+[ERROR][2019-08-06 13:08:25,122] error 测试
+</code></pre></div><p>log目录生成 log_study.log、log_study.log.1、log_study.log.2和log_study.log.3文件，内容为：</p> <div class="language- extra-class"><pre class="language-text"><code>[INFO][2019-08-06 13:08:25,121][views.py:16:index] info 测试
+[WARNING][2019-08-06 13:08:25,122][views.py:17:index] warning 测试
+[ERROR][2019-08-06 13:08:25,122][views.py:18:index] error 测试
+</code></pre></div></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/django-content/14-中间件.html" class="prev">
+        中间件
+      </a></span> <span class="next"><a href="/notes/django-content/16-信号signals.html">
+        django的信号signals
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/notes/assets/js/app.693f674f.js" defer></script><script src="/notes/assets/js/2.ee803d5e.js" defer></script><script src="/notes/assets/js/35.0b951c50.js" defer></script>
+  </body>
+</html>
